@@ -1,0 +1,262 @@
+@use "../ABSTRACT/variable" as *;
+@use "../ABSTRACT/mixins" as *;
+
+.vision {
+    .container {
+        text-align: center;
+        position: relative;
+
+        h1 {
+            margin: 0 auto;
+            font-size: 50px;
+            width: 50%;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: $second-color-light;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 5px;
+            padding-bottom: 45px;
+        }
+
+        button {
+            font-size: 15px;
+            padding: 10px 23px;
+        }
+    }
+
+    .vid-track {
+        padding-top: 100px;
+        display: flex;
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+        gap: 50px;
+
+        .text {
+            width: 50%;
+
+            .boxes {
+                cursor: pointer;
+                padding: 19px 0;
+                border-bottom: 1px solid $border-color;
+
+                .pviid {
+                    display: none;
+                }
+
+                h4 {
+                    line-height: 3;
+                    transition: 1s;
+
+                    &.active {
+                        color: $parple;
+
+                        i {
+                            color: $parple;
+                        }
+                    }
+                }
+
+                p,
+                i {
+                    font-size: 17px;
+                    color: $second-color-light;
+                }
+            }
+        }
+
+        .vid {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 70px;
+
+            video {
+                opacity: 0;
+                pointer-events: none;
+                border-radius: 17px;
+                position: absolute;
+
+                &.active {
+                    opacity: 1;
+                    pointer-events: auto;
+
+                }
+            }
+        }
+    }
+
+    margin-bottom:50px;
+}
+
+.watch {
+    margin-top: 120px;
+    position: relative;
+
+    .container {
+        position: relative;
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+            width: 40%;
+            line-height: 1.2;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 22px;
+            color: $second-color-light;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 35px;
+        }
+
+        button {
+            font-size: 17px;
+            padding: 10px 23px;
+            margin-top: 35px;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .view-vid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+
+        video {
+            width: 70%;
+            border-radius: 17px;
+        }
+
+        span {
+            position: absolute;
+            top: 5%;
+            width: fit-content;
+            border: 1px solid $second-color-light;
+            // left: 106%;
+            padding: 4px 10px;
+            font-size: 15px;
+            right: 5%;
+            color: white;
+            opacity: 0.8;
+            border-radius: 50%;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+                background-color: red;
+            }
+
+        }
+
+    }
+
+    margin-bottom: 200px;
+
+}
+
+@include respond(tablet) {
+
+    .watch {
+        h1 {
+            width: 100% !important;
+            font-size: 35px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .vision {
+        .container {
+            h1 {
+                font-size: 30px;
+                width: 90%;
+            }
+
+            p {
+                font-size: 18px;
+                width: 90%;
+            }
+
+            button {
+                width: 90%;
+            }
+        }
+
+        .vid-track {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            position: relative;
+
+            .vid {
+                display: none;
+            }
+
+            .text {
+                text-align: center;
+                width: 100%;
+                margin: 0;
+
+                .boxes {
+                    border: none;
+
+                    .pviid {
+                        display: block;
+                        width: 90%;
+                        margin: 0 auto;
+                        border-radius: 15px;
+                    }
+
+
+                    p {
+                        margin: 0 auto;
+                        position: relative;
+                        width: 90%;
+                        padding-bottom: 10px;
+                    }
+
+                    h4 {
+                        color: white;
+
+                        i {
+                            color: $parple;
+                            display: block;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}
+
+//.vision .vid-track .text .boxes h4.active i

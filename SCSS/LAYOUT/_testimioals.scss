@@ -1,0 +1,98 @@
+    @use "../ABSTRACT/mixins" as *;
+    @use "../ABSTRACT/variable" as *;
+
+    .testmioals {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: $section-padding;
+        background: linear-gradient(to top, $parple, transparent);
+        padding-bottom: 50px;
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        &>p {
+            text-align: center;
+            color: $second-color-light;
+            font-size: 22px;
+            width: 40%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1400px;
+
+            .track {
+                animation: scroll 120s linear infinite;
+                display: flex;
+                gap: 30px;
+                width: max-content;
+
+                .box {
+                    position: relative;
+                    margin-top: 50px;
+                    width: 3%;
+                    align-items: center;
+                    gap: 10px;
+                    border: 1px solid rgba(180, 175, 175, 0.3);
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                    &>img {
+                        width: 220px;
+                        height: 30px;
+                        margin-bottom: 30px;
+                    }
+
+                    &>p {
+                        font-size: 18px;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        height: 180px;
+                    }
+
+                    .describe {
+                        position: relative;
+                        display: flex;
+
+                        img {
+                            border-radius: 10px;
+                            margin-right: 15px;
+                        }
+
+                        p {
+                            // font-size: 17px;
+                            color: $second-color-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include respond(tablet) {
+        .testmioals {
+            h1 {
+                font-size: 30px;
+                width: 90%;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }

@@ -1,0 +1,59 @@
+@use "../ABSTRACT/variable" as*;
+@use "../ABSTRACT/mixins" as*;
+
+.hero {
+    position: relative;
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(to right, $light-parple, $parple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 20px;
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            color: $second-color-light;
+        }
+
+
+        .hero_vid {
+            margin-top: 10px;
+            border-radius: 17px;
+            margin-bottom: $section-padding;
+            border: 1px solid rgba(52, 51, 51, 0.277);
+        }
+    }
+}
+
+
+@include respond('mobile') {
+    .hero .container {
+        .special {
+            width: fit-content;
+            padding: 5px 10px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        &>h1 {
+            font-size: 35px;
+        }
+
+        &>p {
+            width: 95%;
+        }
+
+    }
+}

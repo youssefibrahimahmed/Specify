@@ -1,0 +1,55 @@
+@use "../ABSTRACT/variable" as*;
+@use "../ABSTRACT/mixins" as*;
+
+.slides {
+
+    position: relative;
+    padding: 50px 0;
+
+    p {
+        font-size: 17px;
+        color: $second-color-light;
+        position: relative;
+        text-align: center;
+    }
+
+    .logo-slider {
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &_track {
+            display: flex;
+
+            img {
+                cursor: pointer;
+                transition: .5s;
+                margin: 0 20px;
+                width: 250px;
+                height: 100px;
+                opacity: .6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            animation: scroll 40s linear infinite;
+        }
+    }
+}
+
+@include respond('mobile') {
+    .slides {
+        .logo-slider {
+            &_track {
+                img {
+                    width: 100px;
+                    height: 45px;
+                }
+
+                animation-duration: 20s;
+            }
+        }
+    }
+}

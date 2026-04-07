@@ -1,0 +1,63 @@
+@use "../ABSTRACT/variable" as *;
+@use "../ABSTRACT/mixins" as *;
+
+button {
+    border-top: 1px solid $second-color-light;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    padding: 5px 13px;
+    border-radius: $border-radius;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -5px;
+    transition: .5s;
+
+    &:hover {
+        background-color: rgba(73, 73, 73, 0.471);
+    }
+}
+
+.container .special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 17px;
+    transition: .3s;
+
+    &:hover {
+        color: white;
+        background-color: black;
+        border-top: 1px solid $second-color-light;
+
+        & i {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    i {
+        opacity: 1;
+        left: 10px;
+        background-color: black;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 50%;
+        color: white;
+    }
+}
+
+@include respond(mobile) {
+    .special {
+
+        width: 90% !important;
+        font-size: 11px !important;
+        font-weight: bold;
+    }
+}

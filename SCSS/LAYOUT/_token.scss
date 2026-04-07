@@ -1,0 +1,115 @@
+@use "../ABSTRACT/variable" as *;
+@use "../ABSTRACT/mixins" as *;
+
+.token {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: $section-padding;
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 15px;
+
+        .box {
+            position: relative;
+            border: 1px solid rgba(52, 51, 51, 0.277);
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(to top, rgb(50, 50, 50, .5), transparent);
+            text-align: center;
+            width: 50%;
+
+            h2 {
+                font-size: 30px;
+                margin-bottom: 15px;
+                padding-top: 60px;
+            }
+
+            &>p {
+                font-size: 21.56px;
+                color: $second-color-light;
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            a {
+                margin-top: 30px;
+            }
+
+            &:nth-child(1) {
+                .fliping {
+
+                    position: relative;
+                    margin-top: 20%;
+                    margin-bottom: 5%;
+                    overflow: hidden;
+                    gap: 15px;
+
+                    .track {
+                        display: flex;
+                        gap: 15px;
+                        width: max-content;
+                        animation: scroll-right 45s linear infinite;
+
+                        img {
+                            position: relative;
+                            border-radius: 15px;
+                            width: 165px;
+                            height: 150px;
+                        }
+
+                        // width: max-content;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .fliping {
+                    position: relative;
+
+                    img {
+                        top: 7px;
+                        position: relative;
+                        right: -8%;
+                        width: 85%;
+                        height: 240px;
+                        border-bottom-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                        margin-top: 10%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include respond(tablet) {
+    .token {
+        h1 {
+            font-size: 30px;
+            width: 80%;
+        }
+
+        .container {
+            display: block;
+
+            .box {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

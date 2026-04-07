@@ -1,0 +1,26 @@
+@use "../ABSTRACT/variable" as *;
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+}
+
+body {
+scroll-behavior: smooth;
+    background-color:$background-color;
+    color:white;    
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}

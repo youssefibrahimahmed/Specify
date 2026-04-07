@@ -1,0 +1,46 @@
+    @mixin centering {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+
+    }
+
+    @keyframes scroll-right {
+        from {
+            transform: translateX(-50%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+
+    }
+
+    @mixin respond($breakpoint) {
+        @if $breakpoint ==mobile {
+            @media (max-width: 768px) {
+                @content;
+            }
+        }
+
+        @if $breakpoint ==tablet {
+            @media (max-width: 992px) {
+                @content;
+            }
+        }
+
+        @if $breakpoint ==large {
+            @media (max-width: 1200px) {
+                @content;
+            }
+        }
+    }

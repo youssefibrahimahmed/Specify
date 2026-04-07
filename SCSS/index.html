@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./MAIN.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Project</title>
+</head>
+
+<body>
+    <!-- nav bar =>header file -->
+    <nav class="nav">
+        <ul class="nav_list">
+            <!-- logo point  -->
+            <li class="nav_item">
+                <a href="#"> <img src="./images/logosvg.svg" alt="logo">Specify </a>
+            </li>
+            <div class="div">
+
+                <!-- soutions point  -->
+                <li class="nav_item">
+                    <a>Solutions <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown1">
+                        <div class="navlist">
+                            <h5>For Whom</h5>
+                            <!-- first box containt pics -->
+                            <div class="pics">
+                                <div class="box">
+                                    <h5>Designer <i class="fa-solid fa-arrow-right"></i></h5>
+                                    <img src="/SCSS/images/clock.avif" alt="">
+                                    <img src="/SCSS/images/blur.avif" alt="">
+                                    <img src="/SCSS/images/ruler.avif" alt="">
+                                </div>
+                                <!-- second box containt pics -->
+                                <div class="box">
+                                    <h5>Developers <i class="fa-solid fa-arrow-right"></i></h5>
+                                    <img src="/SCSS/images/blur2.avif" alt="">
+                                    <img src="/SCSS/images/dollar.avif" alt="">
+                                    <img src="/SCSS/images/fox.avif" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- the list we have -->
+                        <div class="navlist">
+                            <h4>Products</h4>
+                            <ul>
+                                <li> <a href="#"><i class="fa-solid fa-book-open"></i> Decumentation <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li> <a href="#"><i class="fa-solid fa-puzzle-piece"></i> Parsers <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li> <a href="#"><i class="fa-solid fa-feather"></i> SDTF <span> </span> <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li> <a href="#"><i class="fa-solid fa-dolly"></i> Use Cases <i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav_item2">
+                    <a>Resourses <i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-clipboard"></i> Blog <i
+                                    class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-user"></i> Customer stories <i
+                                    class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-map"></i> Guide <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i> Decumentation <i
+                                    class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help center <i
+                                    class="fa-solid fa-arrow-right"></i></a></li>
+                    </ul>
+                </li>
+                <!-- pricing   -->
+                <li class="nav_item">
+                    <a href="#">Pricing</a>
+                </li>
+            </div>
+            <!-- sign in button -->
+            <li class="nav_item">
+                <button>Sign in</button>
+                <div class="menu-icon"> ☰</div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of The Nav Bar -->
+    <!-- ================================================ -->
+    <!-- hero section =>hero file-->
+    <section class="hero">
+        <div class="container">
+            <a href="#" class="special">Saying Goodbye: The End Of Spicify <i class="fa-solid fa-arrow-right"></i></a>
+            <h1>Your Design Token Engine</h1>
+            <p>Flexible and powerful, Specify makes it easy to build the exact
+
+                Design Token workflow your Design System needs. </p>
+            <video autoplay muted loop class="hero_vid" src="./images/main-vid.mp4"></video>
+        </div>
+    </section>
+    <!-- end hero section -->
+    <!-- ========================================================= -->
+    <!-- cards sliders => slids file-->
+    <section class="slides">
+        <p>Specify is loved by</p>
+        <div class="logo-slider">
+            <div class="logo-slider_track">
+                <img src="./images/autodoc.svg" alt="">
+                <img src="./images/basket.svg" alt="">
+                <img src="./images/carrefour.svg" alt="">
+                <img src="./images/census.svg" alt="">
+                <img src="./images/comcast.svg" alt="">
+                <img src="./images/dashlane.svg" alt="">
+                <img src="./images/dept.svg" alt="">
+                <img src="./images/epic.svg" alt="">
+
+
+                <img src="./images/autodoc.svg" alt="">
+                <img src="./images/basket.svg" alt="">
+                <img src="./images/carrefour.svg" alt="">
+                <img src="./images/census.svg" alt="">
+                <img src="./images/comcast.svg" alt="">
+                <img src="./images/dashlane.svg" alt="">
+                <img src="./images/dept.svg" alt="">
+                <img src="./images/epic.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end cards slids -->
+    <!-- *************************************************************** -->
+    <!-- vision =>vision file -->
+    <div class="vision">
+        <div class="container">
+            <h1>Taking design tokens to the next level</h1>
+            <p>Specify helps you gain control of your design system across teams and products</p>
+            <button>Read vision</button>
+        </div>
+        <div class="vid-track">
+            <div class="text">
+                <div class="boxes " data-video="one">
+                    <h4 class="one active"><i class="fa-solid fa-caret-down"></i> Unified Design Language</h4>
+                    <p>Centralize tokens from Figma Styles, Figma Variables, Tokens Studio, or your own JSON file and
+                        ensure a consistent design language across all your digital products. Specify supports over 50
+                        token types.
+                    </p>
+                    <video class="pviid" autoplay muted loop src="./images/v1.mp4"></video>
+
+                </div>
+                <div class="boxes" data-video="two">
+                    <h4 class="two"><i class="fa-regular fa-square-caret-up"></i> Effortless collaboration </h4>
+                    <p>Specify provides a collaborative space where designers can sync design tokens, and developers can
+                        seamlessly integrate design tokens into their platform.
+                    </p>
+                    <video class="pviid" autoplay muted loop src="./images/v2.mp4"></video>
+
+                </div>
+                <div class="boxes" data-video="three">
+                    <h4 class="three"><i class="fa-solid fa-caret-up"></i> Customizable workflows</h4>
+                    <p>Tailor Specify to fit your team's unique workflow. No matter how specific your design and
+                        development processes are, our platform adapts to your needs.
+                    </p>
+                    <video class="pviid" autoplay muted loop src="./images/v3.mp4"></video>
+
+                </div>
+            </div>
+            <div class="vid">
+                <video class="pvid active" id="one" autoplay muted loop src="./images/v1.mp4"></video>
+                <video class="pvid" id="two" autoplay muted loop src="./images/v2.mp4"></video>
+                <video class="pvid" id="three" autoplay muted loop src="./images/v3.mp4"></video>
+            </div>
+        </div>
+    </div>
+    <!-- end vision  -->
+    <!-- ============================================================ -->
+    <!-- Cards slider -->
+
+    <div class="cards">
+        <div class="container">
+
+            <div class="b blue">
+                <div class="left">
+                    <img src="./images/carrefour.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-hockey-puck"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/carrefour.svg" alt=""></div>
+                    <h3 class="main">Jeremy Dahan</h3>
+                    <h4 class="main title">Design System Designer</h4>
+                    <p>"Specify brought us confidence and ease of
+                        mind. Before, we used to be cautious and
+                        hesitant before updating our design tokens.
+                        We're now confident about updating a token,
+                        rolling back to a previous version, or even
+                        trying new ones."</p>
+                    <h3 class="sub">Jeremy Dahan</h3>
+                    <h4 class=" sub title">Design System Designer</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+
+            <div class="b  green">
+                <div class="left">
+                    <img src="./images/dept.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/dept.svg" alt=""></div>
+                    <h3 class="main">Andrew Smith</h3>
+                    <h4 class="title main">Head of Design Systems</h4>
+                    <p>"Thanks to Specify, the mindset of the whole
+                        team has evolved, and it's really changed how
+                        everybody thinks about how they approach
+                        component design and development."</p>
+                    <h3 class="sub">Andrew Smith</h3>
+                    <h4 class="title sub">Head of Design Systems</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="b active perple">
+                <div class="left">
+                    <img src="./images/census.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-hockey-puck"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/census.svg" alt=""></div>
+                    <h3 class="main">Roy Van Rooijen</h3>
+                    <h4 class="title main">Product Designer</h4>
+                    <p>"The automation from design to code with
+                        Specify is incredibly powerful. The ability to
+                        reference the same tokens and assets in
+                        Figma - and in our codebase - saves us an
+                        incredible amount of time, while reducing
+                        manual, error-prone work."</p>
+                    <h3 class="sub">Roy Van Rooijen</h3>
+                    <h4 class="title sub">Product Designer</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="b blue">
+                <div class="left">
+                    <img src="./images/carrefour.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-hockey-puck"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/carrefour.svg" alt=""></div>
+                    <h3 class="main">Jeremy Dahan</h3>
+                    <h4 class="main title">Design System Designer</h4>
+                    <p>"Specify brought us confidence and ease of
+                        mind. Before, we used to be cautious and
+                        hesitant before updating our design tokens.
+                        We're now confident about updating a token,
+                        rolling back to a previous version, or even
+                        trying new ones."</p>
+                    <h3 class="sub">Jeremy Dahan</h3>
+                    <h4 class=" sub title">Design System Designer</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="b  green">
+                <div class="left">
+                    <img src="./images/dept.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/dept.svg" alt=""></div>
+                    <h3 class="main">Andrew Smith</h3>
+                    <h4 class="title main">Head of Design Systems</h4>
+                    <p>"Thanks to Specify, the mindset of the whole
+                        team has evolved, and it's really changed how
+                        everybody thinks about how they approach
+                        component design and development."</p>
+                    <h3 class="sub">Andrew Smith</h3>
+                    <h4 class="title sub">Head of Design Systems</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="b  perple">
+                <div class="left">
+                    <img src="./images/census.svg" alt="">
+                    <p>INTEGRATED APPS</p>
+                    <a href="#"><i class="fa-solid fa-bug"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-hockey-puck"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div class="right">
+                    <div class="logo"><img src="./images/census.svg" alt=""></div>
+                    <h3 class="main">Roy Van Rooijen</h3>
+                    <h4 class="title main">Product Designer</h4>
+                    <p>"The automation from design to code with
+                        Specify is incredibly powerful. The ability to
+                        reference the same tokens and assets in
+                        Figma - and in our codebase - saves us an
+                        incredible amount of time, while reducing
+                        manual, error-prone work."</p>
+                    <h3 class="sub">Roy Van Rooijen</h3>
+                    <h4 class="title sub">Product Designer</h4>
+                    <a href="#" class="special">Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+        <ul class="dots">
+            <li class="1st"></li>
+            <li class="2cd active"></li>
+            <li class="3rd"></li>
+        </ul>
+        <i class="fa-solid fa-angle-right"></i>
+        <i class="fa-solid fa-angle-left"></i>
+
+    </div>
+
+    <!-- End of Cards Section -->
+    <!-- ==================================================================== -->
+    <!-- Watch video about us -->
+    <div class="watch">
+        <div class="container">
+            <h1>Easy setup and
+                instant output</h1>
+            <p>Nothing has been more easy for designers and more customizable for developers</p>
+            <button><i class="fa-solid fa-circle-play"></i> Watch video</button>
+            <div class="view-vid">
+                <video autoplay muted loop src="./images/videoplayback.mp4"></video>
+                <span>X</span>
+            </div>
+        </div>
+    </div>
+    <!-- end watch video -->
+    <!-- ======================================================================= -->
+    <!-- two grids for help -->
+    <div class="feature">
+        <div class="container">
+            <div class="box">
+                <h1>Sync your tokens </h1>
+                <p>Specify is natively compatible with Figma, GitHub, Notion, Raycast, and many more to come. Our REST
+                    API and CLI help you to connect even more. </p>
+                <a class="special" href="#">Discover all available apps <i class="fa-solid fa-arrow-right"></i></a>
+                <img src="./images/box1.avif" alt="">
+            </div>
+            <div class="box">
+                <h1>Customize outputs </h1>
+                <p>Specify’s open source parsers help you generate design tokens and assets that match your company
+                    standards. </p>
+                <a class="special" href="#">Discover all parsers<i class="fa-solid fa-arrow-right"></i></a>
+
+                <div class="slide">
+                    <div class="track t-one">
+
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-text-style</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> kebabcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> convert-font</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-tailwind</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> prefix-by</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> filter</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-text-style</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> kebabcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> convert-font</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-tailwind</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> prefix-by</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> filter</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="track t-two">
+
+                        <span><img class="a" src="./images/A.svg" alt=""> pascalcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> px-to-rem</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-dsp</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> round-number</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-react-native</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> pascalcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> px-to-rem</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-dsp</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> round-number</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-react-native</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="track t-three">
+
+                        <span><img class="s" src="./images/settings.svg" alt=""> svg-to-jsx</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> sort-by</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-typescript-definition</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-font-import</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> svgo</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> svg-to-jsx</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> sort-by</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-typescript-definition</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-font-import</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> svgo</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="track t-four">
+
+                        <span><img class="a" src="./images/A.svg" alt=""> camelcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> replace-string</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-custom-properties</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> omit</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> snakecasify</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-flutter</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> camelcasify</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> replace-string</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-css-custom-properties</span>
+                        <span><img class="e" src="./images/elictric.svg" alt=""> omit</span>
+                        <span><img class="a" src="./images/A.svg" alt=""> snakecasify</span>
+                        <span><img class="s" src="./images/settings.svg" alt=""> to-flutter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-cards">
+            <div class="crd">
+                <h4><i class="fa-brands fa-react"></i> Stay flexible</h4>
+                <p>Sync tokens from multiple sources to one repository, extract them in any structure using our SDK,
+                    GitHub integration, or CLI. We got you covered once you want to scale.</p>
+            </div>
+            <div class="crd">
+                <h4><i class="fa-solid fa-people-group"></i> Reduce error margins</h4>
+                <p>Collaboration has never been easier, resulting in less errors and redundant meetings. Any change made
+                    is easily transferred and communicated with other teams.</p>
+            </div>
+            <div class="crd">
+                <h4><i class="fa-solid fa-bolt"></i> Automate</h4>
+                <p>Automatically sync, convert, and optimize your design tokens and vectors. Set up automated pull
+                    request with our Github integration. </p>
+            </div>
+            <div class="crd">
+                <h4><i class="fa-solid fa-gear"></i> Save time</h4>
+                <p>Set up once, get benefits instantly. We guarantee time savings for you design and development teams
+                    while you keep doing what you’re good at and what you enjoy. </p>
+            </div>
+            <div class="crd">
+                <h4><i class="fa-solid fa-sliders"></i> Prioritize quality</h4>
+                <p>When you’re able to put quality above anything else, it means your processes are well
+                    adopted. We can help you to prioritize the quality of your digital products.</p>
+            </div>
+            <div class="crd">
+                <h4><i class="fa-solid fa-earth-africa"></i> Get the support you need</h4>
+                <p>We're here to help you to get the output you need. Feel free to challenge us if you think your output
+                    is not possible to generate! </p>
+            </div>
+        </div>
+    </div>
+    <!-- end features -->
+    <!-- ===================================================================== -->
+    <!-- testimioals -->
+    <div class="testmioals">
+        <h1>Trusted by product teams</h1>
+        <p>Book your demo and start automating the distribution of your design — your team will love it.</p>
+        <div class="container">
+            <div class="track">
+
+                <div class="box">
+                    <img src="./images/pocket.svg" alt="">
+                    <p>"Specify helps our designers keep their
+                        assets and design decisions in sync with
+                        the actual code, avoiding extra
+                        development effort and making design
+                        Solutions v
+                        Resources v
+                        Book your demo and start automating the distribution of your
+                        implementation much more flexible."</p>
+                    <div class="describe">
+                        <img src="./images/niels.jpg" alt="">
+                        <div class="details">
+                            <h4>Niels Boey</h4>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/makemisic.svg" alt="">
+                    <p>"Specify is the missing link between our
+                        design and engineering teams. It
+                        definitely helped us integrate design
+                        tokens in an automated way very quickly
+                        and seamlessly into our codebase."</p>
+                    <div class="describe">
+                        <img src="./images/gabriel.avif" alt="">
+                        <div class="details">
+                            <h4>Gabriel Cousin</h4>
+                            <p>Front-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/pelo.svg" alt="">
+                    <p>"Specify is the perfect addition to ou
+                        front-end boilerplate. Tokens, assets
+                        fonts: everything comes straight out
+                        Figma. Less configuration, more crea
+                        development. Our team loves it!"</p>
+                    <div class="describe">
+                        <img src="./images/alixes.avif" alt="">
+                        <div class="details">
+                            <h4>Alexis Oney</h4>
+                            <p>Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/pitch.svg" alt="">
+                    <p>"The automation from design to code
+                        with Specify is incredibly powerful. The
+                        ability to reference the same tokens and
+                        assets in Figma - and in our codebase -
+                        saves us an incredible amount of time,
+                        while reducing manual, error-prone
+                        work."</p>
+                    <div class="describe">
+                        <img src="./images/roy.avif" alt="">
+                        <div class="details">
+                            <h4>Roy Van Rooijen</h4>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/strapi.svg" alt="">
+                    <p>"We sync our design tokens and icons to
+                        our tools with Specify, and it gives our
+                        design and engineering teams peace of
+                        mind!"</p>
+                    <div class="describe">
+                        <img src="./images/hicham.avif" alt="">
+                        <div class="details">
+                            <h4>Hicham El Abbassi</h4>
+                            <p>Front-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./images/pocket.svg" alt="">
+                    <p>"Specify helps our designers keep their
+                        assets and design decisions in sync with
+                        the actual code, avoiding extra
+                        development effort and making design
+                        Solutions v
+                        Resources v
+                        Book your demo and start automating the distribution of your
+                        implementation much more flexible."</p>
+                    <div class="describe">
+                        <img src="./images/niels.jpg" alt="">
+                        <div class="details">
+                            <h4>Niels Boey</h4>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/makemisic.svg" alt="">
+                    <p>"Specify is the missing link between our
+                        design and engineering teams. It
+                        definitely helped us integrate design
+                        tokens in an automated way very quickly
+                        and seamlessly into our codebase."</p>
+                    <div class="describe">
+                        <img src="./images/gabriel.avif" alt="">
+                        <div class="details">
+                            <h4>Gabriel Cousin</h4>
+                            <p>Front-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/pelo.svg" alt="">
+                    <p>"Specify is the perfect addition to ou
+                        front-end boilerplate. Tokens, assets
+                        fonts: everything comes straight out
+                        Figma. Less configuration, more crea
+                        development. Our team loves it!"</p>
+                    <div class="describe">
+                        <img src="./images/alixes.avif" alt="">
+                        <div class="details">
+                            <h4>Alexis Oney</h4>
+                            <p>Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/pitch.svg" alt="">
+                    <p>"The automation from design to code
+                        with Specify is incredibly powerful. The
+                        ability to reference the same tokens and
+                        assets in Figma - and in our codebase -
+                        saves us an incredible amount of time,
+                        while reducing manual, error-prone
+                        work."</p>
+                    <div class="describe">
+                        <img src="./images/roy.avif" alt="">
+                        <div class="details">
+                            <h4>Roy Van Rooijen</h4>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/strapi.svg" alt="">
+                    <p>"We sync our design tokens and icons to
+                        our tools with Specify, and it gives our
+                        design and engineering teams peace of
+                        mind!"</p>
+                    <div class="describe">
+                        <img src="./images/hicham.avif" alt="">
+                        <div class="details">
+                            <h4>Hicham El Abbassi</h4>
+                            <p>Front-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimioals -->
+    <!-- ============================================================================ -->
+    <!-- start token -->
+    <div class="token">
+        <h1>Design tokens are the heart of your design system</h1>
+        <div class="container">
+            <div class="box">
+                <h2>Design tokens and assets</h2>
+                <p>Specify supports colors, text styles, shadows, dimensions, bitmaps, vectors, font files, and many
+                    more. All of them are automatically synced and updated. </p>
+                <a class="special" href="#">View documentation <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="fliping">
+                    <div class="track">
+
+                        <img src="./images/color.png" alt="">
+                        <img src="./images/font.png" alt="">
+                        <img src="./images/text style.png" alt="">
+                        <img src="./images/statics.png" alt="">
+                        <img src="./images/color2.png" alt="">
+                        <img src="./images/vector.png" alt="">
+                        <img src="./images/shadow.png" alt="">
+                        <img src="./images/color.png" alt="">
+                        <img src="./images/font.png" alt="">
+                        <img src="./images/text style.png" alt="">
+                        <img src="./images/statics.png" alt="">
+                        <img src="./images/color2.png" alt="">
+                        <img src="./images/vector.png" alt="">
+                        <img src="./images/shadow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Export production-ready code</h2>
+                <p>Use our templates to generate design tokens for any platform, ranging from CSS, Tailwind, React to
+                    React Native, Flutter, Style Dictionary and more. </p>
+                <a class="special" href="#">Discover our templates <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="fliping">
+                    <img src="./images/vs.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end token -->
+    <!-- ============================================================================= -->
+    <!-- foter -->
+    <div class="footer">
+        <div class="container">
+            <div class="logos">
+                <div class="specify main"><img src="./images/logosvg.svg" alt=""> <span>Specify</span></div>
+                <div class="specify main"><img src="./images/soc.svg" alt=""> SOC 2 Type II Certified</div>
+            </div>
+            <div class="product">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Parsers</a></li>
+                    <li><a href="#">SDTF <span></span></a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Launch Week</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Press kit</a></li>
+                    <li><a href="#">Climate</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="community">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logos sublogo">
+            <div class="specify sub"><img src="./images/logosvg.svg" alt=""> <span>Specify</span></div>
+            <div class="specify sub"><img src="./images/soc.svg" alt=""> <span>SOC 2 Type II Certified</span></div>
+        </div>
+
+    </div>
+
+    <!-- end footer -->
+    <!-- ============================================================================= -->
+    <script src="main.js"></script>
+</body>
+
+</html>
